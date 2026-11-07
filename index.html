@@ -175,6 +175,7 @@ const CONFIG = {
 <script>
 "use strict";
 /* ---------------- Utilitários ---------------- */
+const APP_BUILD = "2026.11.3+33153d17.bf9b6319.fbf8ba00~586b4027.3694ce4b.3b918772.a910a12b.1ea00c97.6ebafde7.b8ac3db7.af34a482";
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -335,5 +336,4 @@ const S = {
 
 /* ---------------- Arranque ---------------- */
 async function init() {
-  S.tab = ["people","secret","chat","admin"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "people";
-  S.alias = lsGet("alias
+  S.tab =
